@@ -5,5 +5,6 @@ RUN apt-get update
 RUN apt-get -y install git gcc ltrace
 
 COPY shellfish shellfish
+COPY src src
 
-ADD hsh shellfish/hsh
+RUN cd src && gcc -Wall -Werror -Wextra -pedantic *.c -o hsh && cp hsh ../shellfish/hsh

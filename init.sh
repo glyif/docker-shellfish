@@ -15,16 +15,16 @@ if [ -d "$DIRECTORY" ]; then
 fi
 
 #pulls github repo, names it src and cds into it
-git clone https://github.com/$GITHUBUSR/simple_shell.git src && cd src
+git clone https://github.com/$GITHUBUSR/simple_shell.git src
 
 #runs gcc with alllllll the flags
-gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+#gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 
 #copies hsh into root
-cp hsh ..
+#cp hsh ..
 
 #goes back into root
-cd ../
+#cd ../
 
 #removes src
-rm -rf src
+#rm -rf src
