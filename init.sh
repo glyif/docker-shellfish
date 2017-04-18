@@ -28,7 +28,3 @@ cd ../
 
 #removes src
 rm -rf src
-
-sudo docker cp hsh friendly_heisenberg:/shellfish/hsh
-
-sudo docker exec friendly_heisenberg /bin/sh -c "/shellfish/shellfish.bash"
