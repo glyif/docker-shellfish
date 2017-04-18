@@ -2,7 +2,7 @@
 FROM ubuntu:14.04
 
 RUN apt-get update
-RUN apt-get -y install git
+RUN apt-get -y install git gcc ltrace
 ADD shellfish shellfish
 ADD hsh shellfish/hsh
-RUN shellfish/shellfish.bash
+RUN cd shellfish && ./shellfish.bash
